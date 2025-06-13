@@ -1,5 +1,14 @@
 const { app, BrowserWindow, screen } = require('electron');
 const path = require('path');
+const AutoLaunch = require('auto-launch');
+
+const appLauncher = new AutoLaunch({
+  name: 'CRT Dashboard',
+});
+
+appLauncher.isEnabled().then((enabled) => {
+  if (!enabled) appLauncher.enable();
+});
 
 function createWindow() {
   const displays = screen.getAllDisplays();
@@ -11,7 +20,7 @@ function createWindow() {
     y: targetDisplay.bounds.y,
     width: 960,
     height: 640,
-    fullscreen: true, // Set to true if you want true fullscreen
+    fullscreen: true,
     autoHideMenuBar: true,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
@@ -20,8 +29,11 @@ function createWindow() {
   });
 
   if (process.env.VITE_DEV_SERVER_URL) {
+    // Dev mode: load from Vite server
     win.loadURL(process.env.VITE_DEV_SERVER_URL);
+    win.webContents.openDevTools({ mode: 'detach' });
   } else {
+    // Production: load from built Vite output
     win.loadFile(path.join(__dirname, '../dist/index.html'));
   }
 }
