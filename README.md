@@ -2,7 +2,7 @@
 
 A retro-styled, full-screen clock dashboard designed for a 960x640 IPS mini display, such as the ['Hagibis 3.5inch IPS Mini Screen'](https://www.aliexpress.com/item/1005006767426312.html), built using **React**, **Electron**, and **Vite**. Features authentic CRT effects like screen flicker, scanlines, and degaussing animations.
 
-![Screenshot Placeholder](assets/screenshot.png)
+![Demo](assets/preview.gif)
 
 ---
 
