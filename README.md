@@ -2,7 +2,7 @@
 
 A retro-styled, full-screen clock dashboard designed for a 960x640 IPS mini display, built using **React**, **Electron**, and **Vite**. Features authentic CRT effects like screen flicker, scanlines, and degaussing animations.
 
-![Screenshot Placeholder](assets/screenshot.png) <!-- Replace with real screenshot path -->
+![Screenshot Placeholder](assets/screenshot.png)
 
 ---
 
@@ -19,12 +19,19 @@ A retro-styled, full-screen clock dashboard designed for a 960x640 IPS mini disp
 
 ## 🛠 Installation
 
+To get started on Windows:
+
+1. Go to the ['Releases'](https://github.com/raegar/ips-mini-screen-crt-clock/releases) section.
+2. Download the latest release build (e.g., crt-dashboard Setup 0.0.1.exe).
+3. Run the installer and follow the prompts.
+4. Once installed, the CRT Dashboard will auto-start on boot.
+
 ### Development
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/yourusername/crt-dashboard.git
-   cd crt-dashboard
+   git clone https://github.com/raegar/ips-mini-screen-crt-clock.git
+   cd ips-mini-screen-crt-clock
    ```
 
 2. Install dependencies:
@@ -95,4 +102,4 @@ If not found, it defaults to your primary display.
 
 ## 📄 License
 
-MIT © Jamie Myland (@raegar)
+MIT © [Your Name]
