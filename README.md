@@ -1,4 +1,4 @@
-# CRT Dashboard
+# CRT Dashboard - A CRT Effect Digital Clock for 3.5in IPS Mini Displays
 
 A retro-styled, full-screen clock dashboard designed for a 960x640 IPS mini display, built using **React**, **Electron**, and **Vite**. Features authentic CRT effects like screen flicker, scanlines, and degaussing animations.
 
