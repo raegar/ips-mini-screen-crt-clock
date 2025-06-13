@@ -102,4 +102,4 @@ If not found, it defaults to your primary display.
 
 ## 📄 License
 
-MIT © [Your Name]
+MIT © Jamie Myland (@raegar)
